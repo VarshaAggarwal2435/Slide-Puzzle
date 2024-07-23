@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+#board {
+    margin: 10% 0% 0% 8%;
+    width: 600px;
+    float: left;
+    height: 300px;
+    border: 5px solid rgb(231, 84, 108);
+    border-radius: 10px;
+}
+#output{
+    float: right;
+    border: 3px solid rgb(231, 84, 108);
+    border-radius: 10px;
+    margin: 20% 10%;
+}
+
+#outputimg, #output{
+    width: 200px;
+    height: 100px;
+}
+
+#board img {
+    width: 197px;
+    height: 95px;
+    border: 1px solid black;
+}
+
+h1{
+    float: left;
+    color: yellow;
+    margin: 2% 0% 0% 28%;
+}
