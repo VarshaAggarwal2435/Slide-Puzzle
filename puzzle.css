@@ -2,34 +2,66 @@ body {
     background-color: black;
 }
 
-#board {
-    margin: 10% 0% 0% 8%;
-    width: 600px;
-    float: left;
-    height: 300px;
-    border: 5px solid rgb(231, 84, 108);
-    border-radius: 10px;
+button{
+    width: 200px;
+    height: 80px;
+    background-color: yellow;
+    color: green;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: 600;
+    margin: 2% 0 0 45%;
 }
+button:hover{
+    cursor:grab;
+    background-color: rgb(119, 157, 37);
+    color: yellow;
+    box-shadow: 4px -4px;
+}
+
+#display{
+    display: flex;
+    gap: 100px;
+}
+
+#board {
+    margin: 3% 0% 0% 18%;
+    width: 600px;
+    height: 300px;
+    border: 10px solid rgba(200, 210, 21, 0.955);
+}
+img {
+    width: 194px;
+    height: 94px;
+    border: 2px solid black;
+}
+img:hover{
+    opacity: 0.6;
+}
+
 #output{
     float: right;
-    border: 3px solid rgb(231, 84, 108);
-    border-radius: 10px;
-    margin: 20% 10%;
+    margin-top: 15%;
 }
-
 #outputimg, #output{
-    width: 200px;
-    height: 100px;
-}
-
-#board img {
-    width: 197px;
-    height: 95px;
-    border: 1px solid black;
+    width: 198px;
+    height: 128px;
 }
 
 h1{
     float: left;
     color: yellow;
-    margin: 2% 0% 0% 28%;
+    width: 100%;
+    text-align: center;
+}
+
+#Won{
+    color: black;
+    font-weight: bolder;
+    height: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    line-height: 100px;
+    margin-left: 0%;
 }
