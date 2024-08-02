@@ -9,28 +9,37 @@
 
 <body>
 <div>
+    
     <div class = "container">
-        <button id="game-btn"> START GAME </button>
-        <div id = "display">
-            <div id = "board">
-                <img src ="1.webp" class="0-0" id="0-0">
-                <img src ="2.webp" class="0-1" id="0-1">
-                <img src ="3.webp" class="0-2" id="0-2">
-                <img src ="4.webp" class="1-0" id="1-0">
-                <img src ="5.webp" class="1-1" id="1-1">
-                <img src ="6.webp" class="1-2" id="1-2">
-                <img src ="7.webp" class="0-0" id="2-0">
-                <img src ="8.webp" class="2-1" id="2-1">
-                <img src ="9.webp" class="2-2" id="2-2">
-            </div>
-            <div id = "output"></div>
+        <div class = "heading">
+            <h1 id = "slide-puzzle">SLIDE PUZZLE</h1>
         </div>
-        <h1>Turns: <span id = "turns">0</span></h1>
+        <div id = "choices">
+                
+            <a href = "puzzle3x3.html">
+
+                <div id = "choice1">
+                </div>
+            </a>
+            
+            <a href = "puzzle4x4.html">
+
+                <div id = "choice2">
+                </div>
+            </a>
+            <a href = "size5x5.html">
+
+                <div id = "choice3">
+                </div>
+            </a>
+        </div>
+        <div class="heading">
+            <h2 id = "select-any">Select ANY</h2>
+        </div>
     </div>
-    <div class="won">
-        <h1 id = "Won"></h1>
-    </div>
+    
 </div>
-    <script src = "puzzle.js">  </script>    
+
+<script src="puzzle.js"></script>
 </body>
 </html>

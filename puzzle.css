@@ -1,5 +1,59 @@
 body {
     background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#slide-puzzle{
+    background-color: green;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0;
+}
+#select-any{
+    background-color: green;
+    border-radius: 0.75rem;
+    display: inline;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+#choices{
+    align-items: center;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#choice1, #choice2, #choice3{
+    
+    display: inline;
+    width: 300px;    
+    margin: 4rem 3rem 0rem 4rem;
+    padding: 1rem;
+    border: 3px solid yellow;
+    height: 200px;
+}
+#choice1{
+    content: url("pictures\\10.jpg");
+}
+#choice2{
+    content: url("pictures\\100.jpg");
+    display: inline;
+}
+#choice3{
+    display: inline;
+    content: url("pictures\\1000.jpg");
+    float: right;
+}
+#choice1:hover{
+    content: url("pictures\\change-1.jpeg");
+}
+#choice2:hover{
+    content: url("pictures\\change-2.png");
+}
+#choice3:hover{
+    content: url("pictures\\change-3.jpeg");
 }
 
 button{
@@ -10,7 +64,8 @@ button{
     border-radius: 8px;
     font-size: larger;
     font-weight: 600;
-    margin: 2% 0 0 45%;
+    margin-left:45%;
+    margin-top: 1rem;
 }
 button:hover{
     cursor:grab;
@@ -24,16 +79,39 @@ button:hover{
     gap: 100px;
 }
 
-#board {
+.size3 {
+    width: 194px;
+    height: 94px;
+    border: 2px solid black;
+}
+.size4 {
+    width: 164px;
+    height: 94px;
+    border: 2px solid black;
+}
+.size5 {
+    width: 164px;
+    height: 94px;
+    border: 2px solid black;
+}
+
+#board1 {
     margin: 3% 0% 0% 18%;
     width: 600px;
     height: 300px;
     border: 10px solid rgba(200, 210, 21, 0.955);
 }
-img {
-    width: 194px;
-    height: 94px;
-    border: 2px solid black;
+#board2 {
+    margin: 3% 0% 0% 8%;
+    width: 700px;
+    height: 400px;
+    border: 10px solid rgba(200, 210, 21, 0.955);
+}
+#board3 {
+    margin: 3% 0% 0% 8%;
+    width: 850px;
+    height: 500px;
+    border: 10px solid rgba(200, 210, 21, 0.955);
 }
 img:hover{
     opacity: 0.6;
@@ -48,11 +126,16 @@ img:hover{
     height: 128px;
 }
 
-h1{
-    float: left;
+.heading{
     color: yellow;
-    width: 100%;
     text-align: center;
+    justify-content: center;
+}
+h1, h2{
+    width: 70%;
+    text-align: center;
+    color: yellow;
+    display: inline-block;
 }
 
 #Won{
@@ -64,4 +147,5 @@ h1{
     width: 100%;
     line-height: 100px;
     margin-left: 0%;
+    margin-bottom: 0;
 }

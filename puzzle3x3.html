@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+
+<body>
+<div>
+    <div class = "container">
+        <button id="game-btn1"> START GAME </button>
+        <div id = "display">
+            <div id = "board1">
+                <img src ="pictures\1.jpg" class="0-0 size3" id="0-0">
+                <img src ="pictures\2.jpg" class="0-1 size3" id="0-1">
+                <img src ="pictures\3.jpg" class="0-2 size3" id="0-2">
+                <img src ="pictures\4.jpg" class="1-0 size3" id="1-0">
+                <img src ="pictures\5.jpg" class="1-1 size3" id="1-1">
+                <img src ="pictures\6.jpg" class="1-2 size3" id="1-2">
+                <img src ="pictures\7.jpg" class="0-0 size3" id="2-0">
+                <img src ="pictures\8.jpg" class="2-1 size3" id="2-1">
+                <img src ="pictures\9.jpg" class="2-2 size3" id="2-2">
+            </div>
+            <div id = "output"></div>
+        </div>
+        <h1>Turns: <span id = "turns">0</span></h1>
+    </div>
+    <div class="won">
+        <h1 id = "Won"></h1>
+    </div>
+</div>
+    <script src = "puzzle.js">  </script>    
+</body>
+</html>
